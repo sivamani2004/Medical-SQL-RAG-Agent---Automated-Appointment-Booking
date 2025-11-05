@@ -74,7 +74,7 @@ python -m venv venv
 Install all required Python libraries :
 
 ```bash
-pip install langchain langchain-openai langchain-community langchain-pinecone langchain-text-splitters langgraph pinecone-client psycopg2-binary pypdf
+pip install langchain langchain-openai langchain-community langchain-pinecone langchain-text-splitters langgraph pinecone psycopg2-binary pypdf
 ```
 
 Additionally, requirements.txt file is also provided :
@@ -141,14 +141,8 @@ psql -d hospital_db -U postgres -W -f hospital_schema.sql
 
 You are now ready to run the chatbot!
 
-1. Put all the code from your `.ipynb` file into a single file named `main.py`.
-2. Execute the file from your terminal:
-
-```bash
-python main.py
-```
-
-3. The script will initialize the RAG system (you'll see the logs) and then start the chatbot.
+1. The last code cell of hospital_agent.ipynb file is the main function. 
+2. Run the main function to start the chatbot.
 
 -----
 
