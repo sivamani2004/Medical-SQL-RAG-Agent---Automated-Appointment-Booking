@@ -8,7 +8,7 @@ This agent is secure against common prompt injection attacks, prevents data leak
 
 ## Conversation Logs (Demonstrations)
 
-To see the agent in action, please see the 'output' directory where conversation_logs.pdf is present. The logs in the pdf demonstrate the agent's capabilities including security.
+To see the agent in action, please see the **output** directory where conversation_logs.pdf is present. The logs in the pdf demonstrate the agent's capabilities including security.
 
 ---
 
@@ -48,8 +48,7 @@ Follow these steps to get the project running on your local machine.
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/GenAI-Appointment-Agent.git
-cd GenAI-Appointment-Agent
+git clone https://github.com/sivamani2004/Medical-SQL-RAG-Agent---Automated-Appointment-Booking.git
 ```
 
 ### 3. Set Up the Virtual Environment
@@ -78,7 +77,11 @@ Install all required Python libraries :
 pip install langchain langchain-openai langchain-community langchain-pinecone langchain-text-splitters langgraph pinecone-client psycopg2-binary pypdf
 ```
 
-Additionally, requirements.txt file is also provided.
+Additionally, requirements.txt file is also provided :
+
+```bash
+pip install -r requirements.txt
+```
 
 ### 5. Set Up API Keys & Environment
 
@@ -100,11 +103,9 @@ Now, create your environment file:
 ```env
 # .env
 
-# === AI KEYS ===
 OPENAI_API_KEY="sk-..."
 PINECONE_API_KEY="..."
 
-# === DATABASE CONNECTION ===
 # This connects to the Docker container we are launching in Step 6
 DB_URI="postgresql://postgres:mysecretpassword@localhost:5432/hospital_db"
 ```
@@ -134,7 +135,7 @@ psql -d hospital_db -U postgres -W -f hospital_schema.sql
 * It will ask for your password. Type `mysecretpassword` (it will be invisible) and press Enter.
 
 > **(Optional) Viewing the DB in VS Code:**
-> You can install the [PostgreSQL VS Code extension](https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-postgresql) to connect to and view your running database container. Use the `localhost`, `5432`, `postgres`, and `mysecretpassword` to connect.
+> You can install the [PostgreSQL VS Code extension](https://learn.microsoft.com/en-gb/azure/postgresql/extensions/vs-code-extension/overview) to connect to and view your running database container. Use the `localhost`, `5432`, `postgres`, and `mysecretpassword` to connect. Additionally, video walkthrough link is [here](https://www.youtube.com/watch?v=d_wpn8wW2sw&list=TLPQMjIxMDIwMjUgOmW3bpnHpA&index=5).
 
 ### 7. Run the Agent
 
