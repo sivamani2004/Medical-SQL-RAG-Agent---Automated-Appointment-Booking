@@ -144,6 +144,10 @@ You are now ready to run the chatbot!
 1. The last code cell of hospital_agent.ipynb file is the main function. 
 2. Run the main function to start the chatbot.
 
+### 8. Interactive UI with Streamlit (optional)
+
+Refer the **streamlit** directory in this repository that contains readme.txt file which clearly helps with the setup of streamlit chatbot application.
+
 -----
 
 
