@@ -8,7 +8,7 @@ This agent is secure against common prompt injection attacks, prevents data leak
 
 ## Conversation Logs (Demonstrations)
 
-To see the agent in action, please see the **output** directory where conversation_logs.pdf is present. The logs in the pdf demonstrate the agent's capabilities including security.
+To see the agent in action, please see the **'output'** directory where conversation_logs.pdf is present. The logs in the pdf demonstrate the agent's capabilities including security.
 
 ---
 
@@ -146,7 +146,7 @@ You are now ready to run the chatbot!
 
 ### 8. Interactive UI with Streamlit (optional)
 
-Refer the **streamlit** directory in this repository that contains readme.txt file which clearly helps with the setup of streamlit chatbot application.
+Refer the **'streamlit'** directory in this repository that contains readme.txt file which clearly helps with the setup of streamlit chatbot application.
 
 -----
 
