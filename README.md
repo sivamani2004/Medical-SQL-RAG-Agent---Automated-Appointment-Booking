@@ -16,7 +16,7 @@ To see the agent in action, please see the **'output'** directory where conversa
 
 * **Dual-Task Conversational AI:** The agent can handle two distinct user goals: (1) booking a new appointment and (2) checking an existing one.
 * **RAG for Medical Recommendations:** Uses a Pinecone vector database populated with a `knowledge_base.pdf` to provide accurate specialist recommendations based on user-described symptoms.
-* **Secure, Custom SQL Tools:** Does not use a generic SQL agent. Instead, it uses 7 custom, secure `@tool` functions (e.g., `book_appointment`, `lookup_upcoming_appointment` etc) that are validated, sanitized, and prevent SQL injection.
+* **Secure, Custom SQL Tools:** Does not use a generic SQL agent (Text-to-SQL can be implemented using SQLDatabaseToolkit in langchain, but acts as an admin ended agent and ofcourse is much simpler to execute). Instead, it uses 7 custom, secure `@tool` functions (e.g., `book_appointment`, `lookup_upcoming_appointment` etc) that are validated, sanitized, and prevent SQL injection.
 * **Robust Prompt-Engineering:** The `AGENT_SYSTEM_PROMPT` is highly-detailed, teaching the agent to follow complex, multi-step logic, manage two different tasks, and securely refuse malicious requests.
 * **Built-in Security & Privacy:**
     * **Data Leak Prevention:** The agent will not share doctors’ personal phone numbers or email addresses.
